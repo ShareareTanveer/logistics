@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Image from "next/image";  // Importing the Image component
 
 export default function Shipper() {
   return (
@@ -18,8 +19,7 @@ export default function Shipper() {
               </h1>
 
               <p className="mt-4 max-w-lg text-base sm:text-lg sm:leading-relaxed">
-                LTL shipping solutions simplified with our dedicated
-                representatives and innovative technology.
+                LTL shipping solutions simplified with our dedicated&apos;s
               </p>
               <Button className="bg-basicColor font-semibold text-black text-sm sm:text-base py-8 my-6 px-10 rounded-full hover:bg-green-300">
                 Get Started
@@ -46,13 +46,13 @@ export default function Shipper() {
                     Capacity.
                   </strong>{" "}
                   We partner with over 70 local, regional, and national LTL
-                  specialized carriers to fit your organization's needs.
+                  specialized carriers to fit your organization&apos;s needs.
                 </li>
                 <li>
                   <strong className="font-semibold text-black">
                     Expertise.
                   </strong>{" "}
-                  Whether it's dry, temp-controlled, or special handling, our
+                  Whether it&apos;s dry, temp-controlled, or special handling, our
                   network of carriers and equipment have the solution for your
                   freight.
                 </li>
@@ -76,10 +76,12 @@ export default function Shipper() {
 
             {/* Image Section */}
             <div className="flex justify-center">
-              <img
+              <Image
                 src="/corporate/carousel-1.jpg"
                 alt="Forklift loading a truck"
                 className="rounded-lg shadow-lg"
+                width={500}  // Set width
+                height={300} // Set height
               />
             </div>
           </div>
@@ -111,10 +113,12 @@ export default function Shipper() {
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 px-4 lg:px-16">
             {/* Image Section */}
             <div className="flex justify-center">
-              <img
+              <Image
                 src="/corporate/carousel-1.jpg"
                 alt="Forklift loading a truck"
                 className="rounded-lg shadow-lg"
+                width={500}  // Set width
+                height={300} // Set height
               />
             </div>
             <div>
@@ -128,13 +132,13 @@ export default function Shipper() {
                     Capacity.
                   </strong>{" "}
                   We partner with over 70 local, regional, and national LTL
-                  specialized carriers to fit your organization's needs.
+                  specialized carriers to fit your organization&apos;s needs.
                 </li>
                 <li>
                   <strong className="font-semibold text-black">
                     Expertise.
                   </strong>{" "}
-                  Whether it's dry, temp-controlled, or special handling, our
+                  Whether it&apos;s dry, temp-controlled, or special handling, our
                   network of carriers and equipment have the solution for your
                   freight.
                 </li>

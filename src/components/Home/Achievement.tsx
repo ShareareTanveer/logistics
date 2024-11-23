@@ -58,10 +58,10 @@ function AchievementSection() {
           {achievements.map((achievement, index) => (
             <div
               key={index}
-              className="relative bg-white shadow-lg rounded-lg p-6 flex flex-col items-center transform transition-transform duration-300 hover:scale-105"
+              className="relative bg-white shadow-lg  rounded-lg p-6 flex flex-col items-center transform transition-transform duration-300 hover:scale-105"
               data-aos={achievement.aosEffect}
             >
-              <div className="text-basicColor text-5xl mb-4">
+              <div className="text-gray-800 text-5xl mb-4">
                 {achievement.icon}
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-2">
@@ -78,40 +78,39 @@ function AchievementSection() {
         </div>
       </div>
 
-{/* Call to Action */}
-<div
-  className="md:mt-32 mt-16 relative rounded-lg overflow-hidden shadow-lg"
-  data-aos="fade-up"
->
-  {/* Parallax Background */}
-  <div
-    className="absolute inset-0 bg-cover bg-center parallax-background"
-    style={{
-      backgroundImage: "url('/corporate/hero-logistics.jpg')",
-    }}
-  ></div>
+      {/* Call to Action */}
+      <div
+        className="md:mt-32 mt-16 relative rounded-lg overflow-hidden shadow-lg"
+        data-aos="fade-up"
+      >
+        {/* Parallax Background */}
+        <div
+          className="absolute inset-0 bg-cover bg-center parallax-background"
+          style={{
+            backgroundImage: "url('/corporate/hero-logistics.jpg')",
+          }}
+        ></div>
 
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
-  {/* Content */}
-  <div className="relative z-10 text-white text-center py-20 px-8">
-    <h3 className="text-3xl font-bold mb-4">
-      Need a Trusted Partner for Your Logistics & Imports?
-    </h3>
-    <p className="text-lg mb-6">
-      Let Atlas Logistics Express handle your import, export, and distribution
-      needs with unmatched efficiency.
-    </p>
-    <a
-      href="https://atlaslogisticsexpress.com"
-      className="inline-block bg-white text-black font-semibold px-6 py-3 rounded-md shadow hover:bg-gray-100"
-    >
-      Learn More
-    </a>
-  </div>
-</div>
-
+        {/* Content */}
+        <div className="relative z-10 text-white text-center py-20 px-8">
+          <h3 className="text-3xl font-bold mb-4">
+            Need a Trusted Partner for Your Logistics & Imports?
+          </h3>
+          <p className="text-lg mb-6">
+            Let Atlas Logistics Express handle your import, export, and
+            distribution needs with unmatched efficiency.
+          </p>
+          <a
+            href="https://atlaslogisticsexpress.com"
+            className="inline-block bg-white text-black font-semibold px-6 py-3 rounded-md shadow hover:bg-gray-100"
+          >
+            Learn More
+          </a>
+        </div>
+      </div>
     </section>
   );
 }

@@ -1,14 +1,6 @@
-"use client";
-
-import React, { useEffect } from "react";
+import React from "react";
 import { Button } from "../ui/button";
-import AOS from "aos";
-import "aos/dist/aos.css";
 const HeroSection = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <div className="mx-auto space-y-20">
       <div className="relative bg-[url(/corporate/hero-logistics.jpg)] bg-cover bg-center bg-no-repeat min-h-screen">
@@ -41,7 +33,7 @@ const HeroSection = () => {
             partner for business success.
           </p>
           <div className="flex gap-3">
-            <Button className="bg-basicColor font-semibold text-black text-sm sm:text-base py-2 px-4 rounded-full">
+            <Button className="bg-basicColor font-semibold text-black text-sm sm:text-base py-2 px-4 rounded-full hover:bg-green-300">
               Take a shipment
             </Button>
             <Button className="bg-basicColor font-semibold text-black text-sm sm:text-base py-2 px-4 rounded-full hover:bg-green-300">

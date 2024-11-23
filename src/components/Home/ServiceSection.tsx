@@ -5,7 +5,7 @@ const ServiceSection = () => {
   const services = [
     {
       title: "Purchasing",
-      icon: <ShoppingBagIcon/>,
+      icon: <ShoppingBagIcon className="w-10 h-10 " />,
       details: [
         "Competitive Pricing",
         "Strategic Sourcing",
@@ -20,7 +20,7 @@ const ServiceSection = () => {
     },
     {
       title: "Imports",
-      icon: <ShipIcon />,
+      icon: <ShipIcon className="w-10 h-10 "/>,
       details: [
         "Export Services from Overseas",
         "Customs Brokers",
@@ -35,7 +35,7 @@ const ServiceSection = () => {
     },
     {
       title: "Exports",
-      icon: <PlaneIcon />,
+      icon: <PlaneIcon className="w-10 h-10 " />,
       details: [
         "Export Documents",
         "Air and Ocean Export Services",
@@ -50,7 +50,7 @@ const ServiceSection = () => {
     },
     {
       title: "Logistics",
-      icon: <TruckIcon />,
+      icon: <TruckIcon className="w-10 h-10 " />,
       details: [
         "Warehousing & Distribution",
         "Global Network",
@@ -71,7 +71,7 @@ const ServiceSection = () => {
         Services
       </h2>
       <p className="text-gray-300 text-center mb-10 w-1/2 mx-auto">
-        We have one of the world’s largest networks of independent carriers.
+        We have one of the world&apos;s largest networks of independent carriers.
         With RXO, shippers source the right truck for each load and drivers find
         loads that fit their schedules. Finding the optimal transportation
         solution is a seamless experience.
@@ -82,7 +82,7 @@ const ServiceSection = () => {
             key={index}
             className="bg-white rounded-lg shadow-md py-12 px-6 text-center hover:scale-105 transition-all duration-300"
           >
-            <div className="flex justify-center items-center h-20 w-20 mx-auto border  rounded-full">
+            <div className="flex justify-center items-center h-20 w-20 mx-auto border rounded-full">
               {service.icon}
             </div>
             <h3 className="text-xl font-bold text-black my-6">

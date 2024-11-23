@@ -64,7 +64,7 @@ const Footer = () => {
               "How it works",
               "Discover apps",
               "Trouble connecting?",
-              "softloan Portal",
+              "Atlas Portal",
             ].map((item) => (
               <li
                 key={item}
@@ -101,7 +101,7 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="mt-8 text-center text-gray-500 text-sm">
         <div className="flex justify-center items-center space-x-4 mb-4">
-          <span>© 2024 softloan Inc.</span>
+          <span>© 2024 Atlas Inc.</span>
         </div>
         <div className="flex justify-center space-x-4">
           <a

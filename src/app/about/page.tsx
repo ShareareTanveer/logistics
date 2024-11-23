@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import Link from "next/link";
 
 const teamMembers = [
@@ -89,9 +89,11 @@ export default function About() {
             <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4 text-start">
               {teamMembers.map((member, index) => (
                 <div key={index} className=" space-y-4">
-                  <img
+                  <Image
                     src={member.image}
                     alt={member.name}
+                    height={280}
+                    width={280}
                     className="rounded-lg mb-4 w-76 h-76 object-cover"
                   />
                   <p className="text-white">{member.role}</p>

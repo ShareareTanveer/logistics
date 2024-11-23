@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function Carrier() {
   return (
@@ -47,10 +48,12 @@ export default function Carrier() {
 
             {/* Image Section */}
             <div className="flex justify-center">
-              <img
+              <Image
                 src="/corporate/carousel-1.jpg"
                 alt="Forklift loading a truck"
-                className="rounded-lg shadow-lg h-96 w-full"
+                className="rounded-lg shadow-lg"
+                width={1200} // Specify the width of the image
+                height={800} // Specify the height of the image
               />
             </div>
           </div>
@@ -58,12 +61,14 @@ export default function Carrier() {
         {/* Support */}
 
         <div className="bg-black text-white py-12 px-4 lg:px-16">
-          <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2  gap-12 py-16">
+          <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 py-16">
             <div>
-              <img
+              <Image
                 src="/corporate/what-we-do-2.jpg"
                 alt="Customer support"
                 className="rounded-lg shadow-lg"
+                width={1200} // Specify the width of the image
+                height={800} // Specify the height of the image
               />
             </div>
 
@@ -101,7 +106,7 @@ export default function Carrier() {
         </div>
 
         <div className="bg-[#F2F2F2] text-black py-12 px-4 lg:px-16">
-          <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2  gap-12 py-16">
+          <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 py-16">
             <div className="space-y-4">
               <p className="text-black font-semibold mb-12">Expert service</p>
               <h2 className="text-3xl lg:text-4xl font-bold leading-tight">
@@ -116,10 +121,12 @@ export default function Carrier() {
               </Button>
             </div>
             <div>
-              <img
+              <Image
                 src="/corporate/what-we-do-2.jpg"
                 alt="Customer support"
                 className="rounded-lg shadow-lg"
+                width={1200} // Specify the width of the image
+                height={800} // Specify the height of the image
               />
             </div>
           </div>

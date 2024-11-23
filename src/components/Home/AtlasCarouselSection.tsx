@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Image from "next/image"; // Import Image component
 
 const slides = [
   {
@@ -68,14 +69,17 @@ const AtlasCarousel = () => {
             >
               <div className="p-2">
                 {/* Consistent height for the card */}
-                <Card className="h-[350px] flex flex-col">
+                <Card className="h-[420px] flex flex-col">
                   <CardContent className="flex flex-col justify-between p-4 flex-1">
                     {/* Fixed height for the image */}
                     <div className="flex-grow-0">
-                      <img
+                      <Image
                         src={slide.image}
                         alt={slide.title}
-                        className="rounded-md h-40 w-full object-cover"
+                        className="rounded-md min-h-64"
+                        width={500}  // Provide a width
+                        height={400} // Provide a height
+                        objectFit="cover"  // Ensure the image covers the area
                       />
                     </div>
                     {/* Ensure text content fills remaining space */}

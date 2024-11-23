@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { ArrowDownIcon, ArrowUpIcon } from "lucide-react";
+import Image from "next/image"; // Import the Next.js Image component
 
 const tabs = [
   {
@@ -55,7 +56,7 @@ const WhatWeDoSection = () => {
           {tabs.map((tab, index) => (
             <div
               key={index}
-              className={`p-4  rounded-lg cursor-pointer ${
+              className={`p-4 rounded-lg cursor-pointer ${
                 activeTab === index ? "bg-[#F2F2F2]" : "bg-white"
               }`}
               onClick={() => setActiveTab(index)}
@@ -84,11 +85,13 @@ const WhatWeDoSection = () => {
         {/* Right Section: Image */}
         <div className="relative">
           {tabs[activeTab] && (
-            <img
+            <Image
               key={activeTab}
               src={tabs[activeTab].image}
               alt={tabs[activeTab].title}
-              className="rounded-lg shadow-lg w-full h-auto"
+              width={600}
+              height={500}
+              className="rounded-lg shadow-lg"
               data-aos="zoom-in"
             />
           )}

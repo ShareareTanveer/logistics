@@ -10,7 +10,6 @@ import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
   const pathName = usePathname();
 
   const handleScroll = () => {
@@ -56,12 +55,12 @@ const Navbar = () => {
             </div>
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center justify-between space-x-6 text-md">
-              {menuItem?.menuItems?.map((menu) => {
+              {menuItem?.menuItems?.map((menu, i) => {
                 const isActive = pathName === menu?.link;
                 return (
                   <Link
                     href={menu?.link}
-                    key={menu?.id}
+                    key={i}
                     className={`capitalize px-5 border-b-0 transition ease-in-out delay-150 ${
                       isActive
                         ? "scale-110 py-[13px] font-bold"
@@ -77,9 +76,9 @@ const Navbar = () => {
             <div className="lg:hidden">
               <Sheet>
                 <SheetTrigger>
-                  <Button>
-                    <FontAwesomeIcon icon={faBars} size="lg" />
-                  </Button>
+                  {/* <Button> */}
+                  <FontAwesomeIcon icon={faBars} size="lg" />
+                  {/* </Button> */}
                 </SheetTrigger>
 
                 <SheetContent className="w-full lg:hidden bg-white text-black flex flex-col p-4">
@@ -95,22 +94,24 @@ const Navbar = () => {
                   </div>
                   <div className=" mb-12 mx-auto text-center flex items-center justify-center h-full">
                     <div className="space-y-6">
-                    {menuItem?.menuItems?.map((menu) => {
-                      const isActive = pathName === menu?.link;
-                      return (
-                        <div className="py-4 border-b-2 border-basicColor">
-                          <Link
-                            href={menu?.link}
-                            key={menu?.id}
-                            className={`capitalize px-5 py-2 transition ease-in-out delay-150 ${
-                              isActive ? "font-bold" : ""
-                            }`}
+                      {menuItem?.menuItems?.map((menu, i) => {
+                        const isActive = pathName === menu?.link;
+                        return (
+                          <div
+                            key={i}
+                            className="py-4 border-b-2 border-basicColor"
                           >
-                            {menu?.title}
-                          </Link>
-                        </div>
-                      );
-                    })}
+                            <Link
+                              href={menu?.link}
+                              className={`capitalize px-5 py-2 transition ease-in-out delay-150 ${
+                                isActive ? "font-bold" : ""
+                              }`}
+                            >
+                              {menu?.title}
+                            </Link>
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                 </SheetContent>

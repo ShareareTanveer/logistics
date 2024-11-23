@@ -5,6 +5,7 @@ import ContactSection from "@/components/Home/ContactSection";
 import AtlasCarousel from "@/components/Home/AtlasCarouselSection";
 import AchievementSection from "@/components/Home/Achievement";
 import AboutUsSection from "@/components/Home/AboutUsSection";
+import FaqSection from "@/components/Home/FaqSection";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <ContactSection />
       <AtlasCarousel />
       <AchievementSection />
+      <FaqSection/>
       <AboutUsSection />
     </>
   );

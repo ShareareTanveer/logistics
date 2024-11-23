@@ -5,7 +5,7 @@ import { AOSInit } from "@/lib/aos";
 import MainLayout from "@/components/layout/MainLayout";
 
 
-const roboto = Roboto({ subsets: [], weight: "500" });
+const roboto = Roboto({ subsets: [], weight: "400" });
 // const inter = Inter({ subsets: [], weight: "400" });
 
 export const metadata: Metadata = {
