@@ -1,0 +1,44 @@
+{
+  "menuItems": [
+    {
+      "id": 1,
+      "title": "Shippers",
+      "link": "/shippers",
+      "items": [
+        {
+          "id": 1,
+          "title": "Shippers item 1"
+        },
+        {
+          "id": 2,
+          "title": "Shippers item 2"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Carriers",
+      "link": "/carriers",
+      "items": [
+        {
+          "id": 1,
+          "title": "Carriers item 1"
+        },
+        {
+          "id": 2,
+          "title": "Carriers item 2"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "About",
+      "link": "/about"
+    },
+    {
+      "id": 4,
+      "title": "Contact",
+      "link": "/contact"
+    }
+  ]
+}
